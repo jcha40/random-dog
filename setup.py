@@ -4,11 +4,11 @@
 import os
 import sys
 from setuptools import setup, find_packages
-import cat
+import dog
 
 
 if sys.version_info < (2, 6):
-    raise NotImplementedError("Sorry, you need at least Python 2.6 or Python 3.2+ to use random-cat.")
+    raise NotImplementedError("Sorry, you need at least Python 2.6 or Python 3.2+ to use random-dog.")
 
 
 description = "Modul/Command Line Tool to get dog images"
@@ -21,13 +21,13 @@ except:
 
 setup(
     name = "random-dog",
-    version = cat.__version__,
-    url = 'https://github.com/Prasnal/random-cat',
+    version = dog.__version__,
+    url = 'https://github.com/Prasnal/random-dog',
     license = 'MIT',
     description = description,
     long_description = long_description,
-    author = 'krasncatal',
-    author_email = 'krasnal@lisp.pl',
+    author = 'Dorota Psota',
+    author_email = 'dorota@lisp.pl',
     keywords = 'dog fun',
     packages = find_packages(),
     entry_points="""
