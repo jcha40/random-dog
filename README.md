@@ -16,8 +16,8 @@ $ pip install random-dog
 or get from source
 
 ```
-$ git clone https://github.com/Prasnal/random-cat
-$ cd random-cat
+$ git clone https://github.com/Prasnal/random-dog
+$ cd random-dog
 $ python setup.py install
 ```
 
