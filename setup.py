@@ -11,7 +11,7 @@ if sys.version_info < (2, 6):
     raise NotImplementedError("Sorry, you need at least Python 2.6 or Python 3.2+ to use random-cat.")
 
 
-description = "Modul/Command Line Tool to get cat images"
+description = "Modul/Command Line Tool to get dog images"
 cur_dir = os.path.dirname(__file__)
 try:
     with open(os.path.join(cur_dir, 'README.md')) as file:
@@ -20,19 +20,19 @@ except:
     long_description = description
 
 setup(
-    name = "random-cat",
+    name = "random-dog",
     version = cat.__version__,
-    url = 'https://github.com/gravmatt/random-cat',
+    url = 'https://github.com/Prasnal/random-cat',
     license = 'MIT',
     description = description,
     long_description = long_description,
-    author = 'René Tanczos',
-    author_email = 'gravmatt@gmail.com',
-    keywords = 'cat kitten fun',
+    author = 'krasncatal',
+    author_email = 'krasnal@lisp.pl',
+    keywords = 'dog fun',
     packages = find_packages(),
     entry_points="""
     [console_scripts]
-    randomcat = cat:main
+    randomdog = dog:main
     """,
     classifiers=[
         'Development Status :: 5 - Production/Stable',
