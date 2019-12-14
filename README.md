@@ -1,6 +1,6 @@
 # random-dog
 
-random-dog is a module for getting dog images, it uses dogAPI: https://dog.ceo/dog-api/documentation/random.
+random-dog is a module for getting dog images, it uses dogAPI: https://dog.ceo/dog-api/
 The module creation was inspired by random-cat module (https://github.com/gravmatt/random-cat)
 
 **Python 2 and 3 compatible**

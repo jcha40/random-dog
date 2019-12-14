@@ -2,18 +2,17 @@
 # -*- coding: utf-8 -*-
 
 """
-Copyright (c) 2016, René Tanczos <gravmatt@gmail.com> (Twitter @gravmatt)
+Copyright (c) 2019, Dorota Psota <dorota@lisp.pl>
 The MIT License (MIT)
 
-cat is a amazing modul to get cat images. This Project won't be
-posible without the great Cat API (http://thecatapi.com).
-Big thanks!
+This Project uses Dog API (https://dog.ceo/dog-api/).
+Thanks a lot!
 
-Project on github https://github.com/gravmatt/random-cat
+Project inspired on random-cat module - github: https://github.com/gravmatt/random-cat
 """
 
 
-__author__ = 'René Tanczos'
+__author__ = 'Dorota Psota'
 __version__ = '1.0.1'
 __license__ = 'MIT'
 
