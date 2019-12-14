@@ -48,7 +48,7 @@ The function return the image name (absolute path if directory is specified) of 
 You can also request an image on the terminal.
 
 ```
-$ randomdog [format] [file]
+$ randomdog [file]
 
 # Example:
 
