@@ -1,13 +1,7 @@
-# random-cat
+# random-dog
 
-random-cat is a amazing modul to get cat images. This Project won't be
-posible without the great Cat API (http://thecatapi.com).
-
-## Big Thanks to the great Cat API
-
-Go and visit [http://thecatapi.com](http://thecatapi.com)
-
-![alt text](http://thecatapi.com/api/images/get?type=gif "See? amazing!")
+random-dog is a module for getting dog images, it uses dogAPI: https://dog.ceo/dog-api/documentation/random.
+The module creation was inspired by random-cat module (https://github.com/gravmatt/random-cat)
 
 **Python 2 and 3 compatible**
 
@@ -16,20 +10,20 @@ Go and visit [http://thecatapi.com](http://thecatapi.com)
 Install through **pip**.
 
 ```
-$ pip install random-cat
+$ pip install random-dog
 ```
 
 or get from source
 
 ```
-$ git clone https://github.com/gravmatt/random-cat
+$ git clone https://github.com/Prasnal/random-cat
 $ cd random-cat
 $ python setup.py install
 ```
 
 ## Usage
 
-The cat module has just one function **getCat()** with three optional arguments.
+The dog module has just one function **getDog()** with two optional arguments.
 
 ### Arguments
 
@@ -37,16 +31,14 @@ The cat module has just one function **getCat()** with three optional arguments.
 
 **filename** - default is a unique id
 
-**format** - default is _png_. optional _png_, _jpg_ and _gif_ is available
-
 ```
-import cat
+import dog
 
-# cat.getCat(directory=None, filename=None, format='png')
+# dog.getDog(directory=None, filename=None)
 
-cat.getCat(directory='/users/tor', filename='cat', format='gif')
+dog.getDog(directory='/users/tor', filename='dog')
 
-# /users/tor/cat.gif
+# /users/tor/dog.jpg
 ```
 
 The function return the image name (absolute path if directory is specified) of the image.
@@ -56,16 +48,14 @@ The function return the image name (absolute path if directory is specified) of 
 You can also request an image on the terminal.
 
 ```
-$ randomcat [format] [file]
+$ randomdog [format] [file]
 
 # Example:
 
-$ randomcat gif /users/tor/cat.gif
+$ randomdog /users/tor/dog.jpg
 ```
 
-The two arguments _format_ and _file_ are optional.
-
-You can select the formats _png_, _jpg_ or _gif_.
+The argument _file_ is optional.
 
 The command return the filename/absolute path of the image to the standard output (stdout).
 
