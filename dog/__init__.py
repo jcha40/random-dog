@@ -50,11 +50,18 @@ def getDog(directory=None, filename=None, breed=None):
 def main():
     filename = None
     directory = None
+    breed = None
     if(len(sys.argv) > 1):
-        filename = sys.argv[1]
-        directory = os.path.sep.join(filename.split(os.path.sep)[:-1])
-        filename = os.path.basename(filename).split('.')[0]
-    sys.stdout.write(getDog(directory, filename))
+        if sys.argv[1] == '--breed':
+            breed = sys.argv[2]
+        else:
+            if len(sys.argv) > 2 and sys.argv[2] == '--breed':
+                breed = sys.argv[3]
+            filename = sys.argv[1]
+            directory = os.path.sep.join(filename.split(os.path.sep)[:-1])
+            filename = os.path.basename(filename).split('.')[0]
+        
+    sys.stdout.write(getDog(directory, filename, breed))
 
 
 if __name__ == '__main__':
