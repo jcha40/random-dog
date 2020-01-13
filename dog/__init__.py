@@ -33,12 +33,15 @@ except:
 
 
 url = 'https://dog.ceo/api/breeds/image/random'
+breed_url = 'https://dog.ceo/api/breed/{}/images/random'
 
 
-def getDog(directory=None, filename=None):
+def getDog(directory=None, filename=None, breed=None):
     basename = '%s.%s' % (filename if filename else str(uuid.uuid4()), 'jpg')
     savefile =  os.path.sep.join([directory.rstrip(os.path.sep), basename]) if directory else basename
-    dog=requests.get(url)
+    dog = requests.get(breed_url.format(breed)) if breed else requests.get(url)
+    if dog.status_code == 404:
+        raise ValueError('No dogs available of breed {}'.format(breed))
     downloadlink=json.loads(dog.text)["message"]
     download(downloadlink, savefile)
     return savefile
